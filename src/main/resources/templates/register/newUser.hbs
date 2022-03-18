@@ -1,0 +1,57 @@
+<head>
+    <title>Rescate de Patitas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="inactive underlineHover  login_title"><a href="/signIn">Sign In</a></h2>
+      <h2 class="active login_title">Sign Up </h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first userIcon" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Ti-Xm618Ujo0uvWSvOR1qn3Tslo9o43KVg&usqp=CAU" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form action="/registrar" method="post">
+        <input type="text" id="login" class="fadeIn second" name="nombreDeUsuario" placeholder="nombre de usuario">
+        <input type="password" id="password" class="fadeIn third" name="contrasenia" placeholder="contrasenia" >
+        <input type="text" id="login" class="fadeIn second" name="nombre" placeholder="nombre">
+        <input type="text" id="login" class="fadeIn second" name="apellido" placeholder="apellido">
+        <input type="text" id="login" class="fadeIn second" name="fechaNacimiento">
+        <!--Agregar un listDe TIPO DE DOC DNI,LC,PASS,CI-->
+        <select name="tipoDoc" id="login" class="fadeIn second">
+          <option value="">Seleccione el Tipo de Documento</option>
+          <option value="DNI">DNI</option>
+          <option value="LC">LC</option>
+          <option value="PASS">PASS</option>
+          <option value="CI">CI</option>
+        </select>
+         <input type="text" id="login" class="fadeIn second" name="docNumb" placeholder="numero de documento">
+        <!--Agregar medios de contacto de forma dinamica-->
+        <label id="login">Contacto: </label>
+        <input type="text" id="login" class="fadeIn second" name="nombreContacto" placeholder="nombre contacto">
+        <input type="text" id="login" class="fadeIn second" name="apellidoContacto" placeholder="apellido contacto">
+        
+        <input type="text" id="login" class="fadeIn second" name="emailContacto" placeholder="email de contacto">
+        <input type="text" id="login" class="fadeIn second" name="telefonoContacto" placeholder="telefono">
+        <select name="preferenciaNotificacion" id="login" class="fadeIn second">
+          <option value="">Seleccione su preferencia de notificacion</option>
+          <option value="SMS">SMS</option>
+          <option value="WPP">WPP</option>
+          <option value="MAIL">MAIL</option>
+        </select>
+        <button type="submit"  class="fadeIn fourth">Log in</button>
+
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Olvidaste tu contrasenia?</a>
+      </div>
+  
+    </div>
+  </div>

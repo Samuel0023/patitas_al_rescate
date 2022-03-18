@@ -1,0 +1,32 @@
+<head>
+    <title>Rescate de Patitas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active login_title"> Sign In </h2>
+      <h2 class="inactive underlineHover login_title"><a href="/signUp">Sign Up</a></h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first userIcon" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfn92Uz0WoedKHZbOdgPrHJKS9lP90htuueQ&usqp=CAU" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form action="/login" method="post">
+        <input type="text" id="login" class="fadeIn second" name="nombreDeUsuario" placeholder="Login">
+        <input type="password" id="password" class="fadeIn third" name="contrasenia" placeholder="Password" >
+        <button type="submit"  class="fadeIn fourth">Log in</button>
+
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Olvidaste tu contrasenia?</a>
+      </div>
+  
+    </div>
+  </div>
